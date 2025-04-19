@@ -2,316 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SNEHA SS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNEHA SS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <header>
+    <h1 class="logo">SNEHA SS</h1>
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div id="navMenu" class="nav-offcanvas">
+    <button class="close-btn" onclick="closeNav()">&times;</button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-    <header>
-        <h1 class="logo">SNEHA SS</h1>
-        <div class="hamburger" onclick="toggleNav()">&#9776;</div> <!-- Hamburger Icon -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Off-Canvas Menu -->
-    <div id="navMenu" class="nav-offcanvas">
-        <button class="close-btn" onclick="closeNav()">&times;</button> <!-- Close Button -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+  <section class="hero" id="home">
+    <div class="overlay">
+      <h2>Full Stack Developer</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sneha-ss-52b2b326b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
+  </section>
 
-    <section class="hero">
-        <div class="overlay">
-            <h2>Full Stack Developer</h2>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+  <section class="contact-split-section" id="about">
+    <div class="left-side">
+      <img src="aboutmee.png" alt="About Sneha" />
+    </div>
+    <div class="right-side">
+      <div class="glass-info hidden">
+        <div class="about-text">
+          <h1>So, who am I?</h1>
+          <p>I'm Sneha — a creative and detail-driven Full Stack Developer who loves turning ideas into interactive digital experiences. ✨ Let’s create something amazing together!</p>
+          <a href="#contact" class="btn-unique">✨ Contact me</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-
-    <section class="contact-split-section" id="" style="padding-top: 100px;">
-        <div class="left-side">
-            <img src="aboutmee.png" alt="Lexi Lily" />
-        </div>
-
-        <div class="right-side">
-            <div class="glass-info hidden">
-                <div class="about-text">
-                    <h1>So, who am I?</h1>
-                    <p>
-                        I'm Sneha — a creative and detail-driven Full Stack Developer who loves turning ideas into
-                        interactive
-                        digital experiences. Whether it's a sleek website, a powerful web app, or an eye-catching
-                        design, I
-                        bring both code and creativity to the table.
-
-                        With a strong passion for clean design and efficient development, I’m on a mission to build
-                        user-friendly, responsive, and high-performing solutions that make an impact.
-
-                        <br>
-                        ✨ Let’s create something amazing together!
-                    </p>
-                    <a href="#" class="btn-unique">✨ Contact me</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="resume" class="resume-section">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-
-            <!-- Timeline Start -->
-            <div class="timeline">
-
-                <!-- Education Block -->
-                <div class="timeline-block">
-                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <h3>Education</h3>
-                        <h4>B.Tech in Computer Science</h4>
-                        <span class="date">2019 - 2023</span>
-                        <p>M Dasan Institute of Technology, Kozhikode, Kerala</p>
-                        <p>CGPA: 7</p>
-                        <br>
-
-                        <h4>Biological Sciences</h4>
-                        <span class="date">2017 - 2019</span>
-                        <p> IHSS, Kozhikode, Kerala</p>
-                        <P>Marks: 85%</P>
-                        <br>
-
-                        <h4>High School Education</h4>
-                        <span class="date">2017</span>
-                        <p>NAMSS, Kannur, Kerala</p>
-                        <P>Marks: 98%</P>
-
-
-                    </div>
-                </div>
-
-                <!-- Internship Block -->
-                <div class="timeline-block">
-                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <h4>Python Full Stack Developer Intern</h4>
-                        <span class="date">Jan 2023 - Mar 2023</span>
-                        <p>Worked with Django, front-end development, and API integration.</p>
-                        <br>
-                        <h4>Python Django Internship</h4>
-                        <span class="date">June 23, 2022 - Jun 28, 20223</span>
-                        <p>Worked with Django, Technologies Used: Python,framework-Django.</p>
-                    </div>
-                </div>
-
-                <!-- ERPNext Experience -->
-                <div class="timeline-block">
-                    <div class="timeline-icon"><i class="fas fa-code"></i></div>
-                    <div class="timeline-content">
-                        <h3>Experience</h3>
-                        <h4>Python full stack Developer</h4>
-                        <span class="date">May 20, 2024 - Feb 04, 2025 </span>
-                        <p>Customized modules, reports, and automated workflows in ERPNext.</p>
-                        <p> Develop and maintain comprehensive web applications tailored to the real estate industry.
-                        </p>
-                        <p> Work closely with the team to integrate front-end and back-end components, ensuring
-                            efficient
-                            performance and seamless user experiences. </p>
-                        <p>Optimize and enhance the real estate management platform by leveraging ERPNext and Frappe
-                            frameworks.</p>
-                        <p>Technologies Used: ERPNext, Frappe, Python, Django, JavaScript , Automation</p>
-                    </div>
-                </div>
-
-                <!-- Skills -->
-                <div class="timeline-block">
-                    <div class="timeline-icon"><i class="fas fa-tools"></i></div>
-                    <div class="timeline-content">
-                        <h3>Skills</h3>
-                        <ul class="skills">
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>ERPNext</li>
-                            <li>Frapee</li>
-                            <li>Canva</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="download-resume">
-                    <a href="resume.pdf" download class="btn-download">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                </div>
-
-            </div>
-            <!-- Timeline End -->
-        </div>
-    </section>
-    <!-- <section id="my-portfolio-section" class="modern-portfolio-section">
-        <div class="modern-container">
-          <h2 class="modern-section-title">My Works</h2>
-      
-          <div class="modern-project">
-            <h3 class="modern-project-title">Job Portal</h3>
-            <div class="modern-image-grid">
-              <img src="images/job1.png" alt="Job Screenshot 1" class="modern-img">
-              <img src="images/job2.png" alt="Job Screenshot 2" class="modern-img">
-              <img src="images/job3.jpg" alt="Job Screenshot 3" class="modern-img">
-              <img src="images/job4.jpg" alt="Job Screenshot 4" class="modern-img">
-            </div>
-          </div>
-      
-          <div class="modern-project">
-            <h3 class="modern-project-title">Recipe Sharing Platform</h3>
-            <div class="modern-image-grid">
-              <img src="images/recipe1.jpg" alt="Recipe Screenshot 1" class="modern-img">
-              <img src="images/recipe2.jpg" alt="Recipe Screenshot 2" class="modern-img">
-              <img src="images/recipe3.jpg" alt="Recipe Screenshot 3" class="modern-img">
-              <img src="images/recipe5.jpg" alt="Recipe Screenshot 5" class="modern-img">
-            </div>
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="timeline">
+        <div class="timeline-block">
+          <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <h3>Education</h3>
+            <h4>B.Tech in Computer Science</h4>
+            <span class="date">2019 - 2023</span>
+            <p>M Dasan Institute of Technology, Kozhikode, Kerala</p>
+            <p>CGPA: 7</p>
+            <br>
+            <h4>Biological Sciences</h4>
+            <span class="date">2017 - 2019</span>
+            <p> IHSS, Kozhikode, Kerala</p>
+            <P>Marks: 85%</P>
+            <br>
+            <h4>High School Education</h4>
+            <span class="date">2017</span>
+            <p>NAMSS, Kannur, Kerala</p>
+            <P>Marks: 98%</P>
           </div>
         </div>
-      
-        <!-- Modal -->
-        <!-- <div id="imgModal" class="modern-modal">
-          <span class="modern-close">&times;</span>
-          <img class="modern-modal-content" id="modal-img">
-        </div> -->
-
-<!--            
-        <h2 class="gallery-title">My posters Gallery</h2>
-        <div class="masonry-gallery">
-          <img src="images/post3.png" alt="Work 3" class="gallery-item" data-full>
-          <img src="images/post4.png" alt="Work 5" class="gallery-item" data-full>
-
-          <img src="images/post2.png" alt="Work 4" class="gallery-item" data-full>
-          <img src="images/post1.png" alt="Work 1" class="gallery-item" data-full>
-
-          <img src="images/post5.png" alt="Work 2" class="gallery-item" data-full> -->
-
-        <!-- </div> -->
-      
-      <!-- </section> -->
-
-      <section class="contact-section">
-        <h2 class="contact-title">Contact  <span>Me</span></h2>
-        <p class="contact-subtext">
-            I’d love to hear from you! Whether you have a project in mind, a question, or just want to say hello — feel free to reach out anytime.        </p>
-      
-        <div class="contact-cards">
-          <div class="contact-card">
-            <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="address icon" />
-            <h4>ADDRESS</h4>
-            <p>Calicut, Kerala, India</p>
-          </div>
-          <div class="contact-card">
-            <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone icon" />
-            <h4>PHONE</h4>
-            <p>+91 6235123917</p>
-          </div>
-          <div class="contact-card">
-            <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="email icon" />
-            <h4>EMAIL</h4>
-            <p>sssneha2015@gmail.com</p>
+        <div class="timeline-block">
+          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <h3>Internship</h3>
+            <h4>Python Full Stack Developer Intern</h4>
+            <span class="date">Jan 2023 - Mar 2023</span>
+            <p>Worked with Django, front-end development, and API integration.</p>
+            <br>
+            <h4>Python Django Internship</h4>
+            <span class="date">June 23, 2022 - Jun 28, 2023</span>
+            <p>Worked with Django, Technologies Used: Python, framework - Django.</p>
           </div>
         </div>
-      </section>
-      <div class="whatsapp-button">
-    <a href="https://wa.me/+916235123917" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+        <div class="timeline-block">
+          <div class="timeline-icon"><i class="fas fa-code"></i></div>
+          <div class="timeline-content">
+            <h3>Experience</h3>
+            <h4>Python Full Stack Developer</h4>
+            <span class="date">May 20, 2024 - Feb 04, 2025</span>
+            <p>Customized modules, reports, and automated workflows in ERPNext.</p>
+            <p>Develop and maintain comprehensive web applications tailored to the real estate industry.</p>
+            <p>Work closely with the team to integrate front-end and back-end components, ensuring efficient performance and seamless user experiences.</p>
+            <p>Optimize and enhance the real estate management platform by leveraging ERPNext and Frappe frameworks.</p>
+            <p>Technologies Used: ERPNext, Frappe, Python, Django, JavaScript, Automation</p>
+          </div>
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-icon"><i class="fas fa-tools"></i></div>
+          <div class="timeline-content">
+            <h3>Skills</h3>
+            <ul class="skills">
+              <li>Python</li>
+              <li>Django</li>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>MongoDB</li>
+              <li>SQL</li>
+              <li>ERPNext</li>
+              <li>Frappe</li>
+              <li>Canva</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+        <div class="download-resume">
+          <a href="resume.pdf" download class="btn-download">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="modern-portfolio-section">
+    <div class="modern-container">
+      <h2 class="modern-section-title">My Works</h2>
+      <p style="text-align: center;">Projects coming soon...</p>
+    </div>
+  </section>
+
+  <section id="experience" class="resume-section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p style="text-align: center;">Details will be updated here...</p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2 class="contact-title">Contact <span>Me</span></h2>
+    <p class="contact-subtext">I’d love to hear from you! Reach out anytime.</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="address icon" />
+        <h4>ADDRESS</h4>
+        <p>Calicut, Kerala, India</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone icon" />
+        <h4>PHONE</h4>
+        <p>+971 55 730 6360</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="email icon" />
+        <h4>EMAIL</h4>
+        <p>sssneha2015@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/971557306360" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" alt="WhatsApp">
     </a>
-</div>
-   
+  </div>
 
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>SNEHA SS</h2>
+        <p>Crafting creative digital experiences with code & design.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#home"> Home</a></li>
+          <li><a href="#works"> Projects</a></li>
+          <li><a href="#contact"> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/sneha-ss-52b2b326b/" target="_blank"> LinkedIn</a></li>
+          <li><a href="https://github.com/" target="_blank"> GitHub</a></li>
+          <li><a href="mailto:sssneha2015@gmail.com"> Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sneha SS. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <footer class="site-footer" style="padding-top: 100px; margin-top: 100px;">
-        <div class="footer-content">
-            <div class="footer-left">
-                <h2>SNEHA SS</h2>
-                <p>Crafting creative digital experiences with code & design.</p>
-            </div>
-
-            <div class="footer-links">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="#home"> Home</a></li>
-                    <li><a href="#projects"> Projects</a></li>
-                    <li><a href="#contactSection"> Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-socials">
-                <h3>Connect</h3>
-                <ul>
-                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank"> LinkedIn</a></li>
-                    <li><a href="https://github.com/yourprofile" target="_blank"> GitHub</a></li>
-                    <li><a href="mailto:example@gmail.com"> Email</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 sneha ss. All rights reserved.</p>
-        </div>
-    </footer>
-
-
-    <script>
-        // Function to toggle the navigation menu
-        function toggleNav() {
-            const nav = document.getElementById("navMenu");
-            nav.classList.toggle("open");
-        }
-
-        // Function to close the navigation menu (triggered by the close button)
-        function closeNav() {
-            const nav = document.getElementById("navMenu");
-            nav.classList.remove("open");
-        }
-
-        // Close the nav if clicked outside (only for mobile)
-        document.addEventListener("click", function (event) {
-            const nav = document.getElementById("navMenu");
-            const hamburger = document.querySelector(".hamburger");
-            const closeButton = document.querySelector(".close-btn");
-
-            if (!nav.contains(event.target) && !hamburger.contains(event.target) && !closeButton.contains(event.target)) {
-                nav.classList.remove("open"); // Close menu when clicked outside
-            }
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
