@@ -36,25 +36,12 @@
 //   };
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const navMenu = document.getElementById("navMenu");
-  const hamburger = document.querySelector(".hamburger");
-  const closeBtn = document.querySelector(".close-btn");
-
-  hamburger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    navMenu.classList.toggle("open");
-  });
-
-  closeBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    navMenu.classList.remove("open");
-  });
-
-  document.addEventListener("click", (event) => {
-    if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-      navMenu.classList.remove("open");
-    }
-  });
-});
+function toggleNav() {
+  const navbar = document.getElementById('navbar');
+  if (navbar.style.display === 'none' || navbar.style.display === '') {
+    navbar.style.display = 'block'; // Show the nav
+  } else {
+    navbar.style.display = 'none'; // Hide the nav
+  }
+}
 
