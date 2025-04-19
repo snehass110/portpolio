@@ -865,16 +865,6 @@
 
 
 
-/* Your existing CSS is already quite clean and responsive. Minor enhancements can be added here if needed. */
-
-/* Ensures hero text is centered on all screen sizes */
-@media (max-width: 600px) {
-  .overlay h2 {
-    font-size: 1.4rem;
-  }
-}
-
-/* Adjust WhatsApp button for mobile */
 @media (max-width: 768px) {
   .whatsapp-button img {
     width: 50px;
@@ -882,17 +872,4 @@
   }
 }
 
-/* Improve header layout on small screens */
-@media (max-width: 600px) {
-  header {
-    padding: 1rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-}
 
-/* Smooth scrolling for nav links */
-html {
-  scroll-behavior: smooth;
-}
